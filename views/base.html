@@ -1,0 +1,54 @@
+
+{% extends "template.njk" %}
+
+{# Import macros so you don't need to in the views #}
+{% from "back-link/macro.njk"     import govukBackLink %}
+{% from "breadcrumbs/macro.njk"   import govukBreadcrumbs %}
+{% from "button/macro.njk"        import govukButton %}
+{% from "checkboxes/macro.njk"    import govukCheckboxes %}
+{% from "date-input/macro.njk"    import govukDateInput %}
+{% from "details/macro.njk"       import govukDetails %}
+{% from "error-message/macro.njk" import govukErrorMessage %}
+{% from "error-summary/macro.njk" import govukErrorSummary %}
+{% from "fieldset/macro.njk"      import govukFieldset %}
+{% from "file-upload/macro.njk"   import govukFileUpload %}
+{% from "input/macro.njk"         import govukInput %}
+{% from "label/macro.njk"         import govukLabel %}
+{% from "panel/macro.njk"         import govukPanel %}
+{% from "phase-banner/macro.njk"  import govukPhaseBanner %}
+{% from "radios/macro.njk"        import govukRadios %}
+{% from "select/macro.njk"        import govukSelect %}
+{% from "skip-link/macro.njk"     import govukSkipLink %}
+{% from "table/macro.njk"         import govukTable %}
+{% from "tag/macro.njk"           import govukTag %}
+{% from "textarea/macro.njk"      import govukTextarea %}
+{% from "warning-text/macro.njk"  import govukWarningText %}
+
+{% block head %}
+  <link rel="stylesheet" href="main.css?v1">
+  <!--[if lt IE 9]>
+    <script src="html5shiv/dist/html5shiv.js"></script>
+  <![endif]-->
+{% endblock %}
+
+{% block header %}
+{% endblock %}
+
+{% block footer %}
+  <div class="govuk-width-container">
+    <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+    <a class="govuk-link" href="https://glitch.com/edit/#!/remix/{{glitchProjectName}}">
+      Remix this example on Glitch.com
+    </a>
+    <br>
+    <br>
+    <a class="govuk-link" href="https://glitch.com/edit/#!/{{glitchProjectName}}">
+      View the source for this example on Glitch.com
+    </a>
+  </div>
+{% endblock %}
+
+{% block bodyEnd %}
+  <script src="govuk-frontend/all.js"></script>
+  <script>window.GOVUKFrontend.initAll();</script>
+{% endblock %}
