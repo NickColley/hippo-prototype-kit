@@ -1,0 +1,85 @@
+$govuk-canvas-background-colour: white;
+
+@import "node_modules/govuk-frontend/govuk/all";
+
+$app-light-grey: #f8f8f8;
+$app-code-color: #dd1144;
+
+.app-\!-max-width-measure {
+  max-width: 38rem;
+}
+
+.app-\!-max-width-100 {
+  max-width: 100%;
+}
+
+.app-pre {
+  position: relative;
+  margin: 0;
+  padding: govuk-spacing(3);
+  overflow: auto;
+  border: 1px solid $govuk-border-colour;
+  background-color: $app-light-grey;
+  font-size: 16px;
+  max-width: 38em;
+  @include govuk-responsive-margin(4, "bottom");
+}
+
+.app-code {
+  padding: 0 govuk-spacing(1);
+  color: $app-code-color;
+  background-color: govuk-colour("dark-grey");
+}
+
+// Global styles, if they dont have classes applied.
+// See https://github.com/alphagov/govuk-frontend/blob/873cc06e07c2b629cfb0eed28b886059da86626f/src/govuk/core/_global-styles.scss
+a:not([class]) {
+  @extend %govuk-link;
+}
+
+p:not([class]) {
+  @extend %govuk-body-m;
+}
+
+$hippo-background-color: #e5ebf0;
+$hippo-text-color: #1A1323;
+$hippo-font-family: -apple-system, linkMacSystemFont, Helvetica Neue, Segoe UI, Roboto, Arial, sans-serif;
+
+// Hippo styles
+.hippo-header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: $hippo-background-color;
+  color: $hippo-text-color;
+  font-family: $hippo-font-family;
+}
+
+.hippo-header-container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hippo-header-service-name {
+  line-height: 1;
+  font-size: 2rem;
+}
+
+.hippo-footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: $hippo-background-color;
+  color: $hippo-text-color;
+  font-family: -apple-system, linkMacSystemFont, Helvetica Neue, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.hippo-footer-container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hippo-footer-service-name {
+  line-height: 1;
+  font-size: 2rem;
+}

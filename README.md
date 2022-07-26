@@ -1,4 +1,13 @@
-GOV.UK Frontend Markdown
-=================
+# Hippo Prototype Kit
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+Experimental Markdown-first Cloud-first Prototype Kit for GOV.UK.
+
+## Todo
+
+### Before live
+- Password protection
+
+### Next
+- Global data
+- Session data
+- Form handling

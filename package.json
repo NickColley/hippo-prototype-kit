@@ -1,9 +1,9 @@
 {
   "private": true,
-  "name": "govuk-frontend-markdown",
+  "name": "hippo-prototype-kit",
   "version": "1.0.0",
-  "description": "A simple Node app built on Express, instantly up and running. With GOV.UK Frontend installed.",
-  "main": "server.js",
+  "description": "",
+  "main": "lib/server.js",
   "type": "module",
   "license": "MIT",
   "scripts": {
